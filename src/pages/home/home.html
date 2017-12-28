@@ -1,0 +1,155 @@
+
+<ion-header >
+  <ion-navbar color="danger">
+    <ion-title>اسم حالة</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-list no-lines > 
+
+    <button  ion-item  *ngFor=" let item  of items$  | async json " (click)="itemSelected(item.payload.val().key,item.payload.val().firstname,item.payload.val().lastname,item.payload.val().address,item.payload.val().phone,item.payload.val().details)"> 
+        
+      <ion-avatar item-start>
+        <img src="assets/imgs/ic1.png">
+      </ion-avatar>
+   
+      <h2>{{item.payload.val().firstname}}</h2>
+      <h3>{{item.payload.val().lastname}}</h3>
+      <p>{{item.payload.val().address}}  -  {{item.payload.val().phone}}</p>
+      <ion-note>{{item.payload.val().caseId}}</ion-note>
+    
+
+  </button>
+
+</ion-list>
+</ion-content>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<html lang="ar" dir="rtl">
+
+<ion-header>
+  <ion-navbar >
+    <ion-title text-right>إضافة حالة</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<!-- <ion-content > -->
+   <!-- <ion-card>
+     <ion-card-content> -->
+       <!-- <ion-list no-lines > -->
+        
+         
+           <!-- <ion-item  > -->
+              <!-- <ion-label color="primary"stacked >الاسم الاول</ion-label>
+                <ion-input type="text" text-right placeholder="الاسم الاول"></ion-input> -->
+           <!-- </ion-item> -->
+
+           <!-- <ion-item> -->
+
+              <!-- <ion-label color="primary"stacked >الاسم الثاني</ion-label>
+              <ion-input type="text" text-right placeholder="الاسم الثاني"></ion-input> -->
+                 
+           <!-- </ion-item> -->
+
+           <!-- <ion-item> -->
+                 <!-- <ion-label color="primary"stacked >العنوان</ion-label>
+              <ion-input type="text" text-right placeholder="العنوان"></ion-input> -->
+            <!-- </ion-item> -->
+            <!-- <ion-item> -->
+                <!-- <ion-label color="primary"stacked >رقم الهاتف</ion-label>
+                <ion-input type="text" text-right placeholder="رقم الهاتف"></ion-input> -->
+                 
+            <!-- </ion-item> -->
+        
+       <!-- </ion-list>
+       <ion-label color="primary"stacked >ارفاق صور عن الحاله او تقارير طبيه</ion-label>
+
+       <ion-grid>
+          <ion-row>
+            <ion-col col-4>
+                <button ion-button color="light"> <ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button color="light"> <ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button color="light"> <ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+        <ion-label stacked >التفاصيل</ion-label>
+        <ion-textarea name="description"></ion-textarea>
+
+       -->
+
+     <!-- </ion-card-content>
+   </ion-card> -->
+  
+<!-- </ion-content>
+
+</html> -->
+
+
+
